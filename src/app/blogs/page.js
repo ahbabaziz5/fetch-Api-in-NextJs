@@ -13,10 +13,10 @@ export default async function Blog(){
     return(
      <div className="blog"> <h1 className="heading">Blogs </h1>
    {
-    users.map((data)=>{
+    users.map((data,i)=>{
       return(
         <Link  href={`/blogs/${data.id}`}>
-        <div className="h-12 bg-fuchsia-200 my-5">
+        <div  className="h-12 bg-fuchsia-200 my-5">
       <h1 >{data.name}</h1>
       <p >{data.email}</p></div></Link>
     )})
